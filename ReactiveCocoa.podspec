@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
     end
     general.subspec 'Core' do |core|
       core.dependencies= {
-        "ReactiveCocoa/no-arc"
+        "ReactiveCocoa/no-arc"=""
       }
       core.source_files= "ReactiveCocoaFramework/ReactiveCocoa/**/*.{d,h,m}"
       core.private_header_files= "**/*Private.h", "**/*EXTRuntimeExtensions.h"
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     end
     general.subspec 'UI' do |ui|
       ui.dependencies= {
-        "ReactiveCocoa/no-arc"
+        "ReactiveCocoa/no-arc"=""
       }
       ui.source_files= "ReactiveCocoaFramework/ReactiveCocoa/**/*{AppKit,NSControl,NSText,NSTable,UIActionSheet,UIAlertView,UIBarButtonItem,UIButton,UICollectionReusableView,UIControl,UIDatePicker,UIGestureRecognizer,UIImagePicker,UIRefreshControl,UISegmentedControl,UISlider,UIStepper,UISwitch,UITableViewCell,UITableViewHeaderFooterView,UIText}*",
       ui.osx= {
