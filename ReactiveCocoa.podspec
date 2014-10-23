@@ -38,9 +38,7 @@ Pod::Spec.new do |s|
       # ui.osx= {
 #         "exclude_files"=> "ReactiveCocoaFramework/ReactiveCocoa/**/*{UIActionSheet,UIAlertView,UIBarButtonItem,UIButton,UICollectionReusableView,UIControl,UIDatePicker,UIGestureRecognizer,UIImagePicker,UIRefreshControl,UISegmentedControl,UISlider,UIStepper,UISwitch,UITableViewCell,UITableViewHeaderFooterView,UIText}*.{d,h,m}"
 #       }
-      ui.ios= {
-        "exclude_files"=> "ReactiveCocoaFramework/ReactiveCocoa/**/*{AppKit,NSControl,NSText,NSTable}*.{d,h,m}"
-      }
+      ui.ios.exclude_files= "ReactiveCocoaFramework/ReactiveCocoa/**/*{AppKit,NSControl,NSText,NSTable}*.{d,h,m}"
       ui.header_dir= "ReactiveCocoa"
     end
   end
