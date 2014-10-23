@@ -7,7 +7,7 @@
     "Josh Abernathy": "josh@github.com"
   },
   "source": {
-    "git": "https://github.com/ReactiveCocoa/ReactiveCocoa.git",
+    "git": "https://github.com/zengql512/ReactiveCocoa.git",
     "tag": "v2.3.1"
   },
   "license": "MIT",
