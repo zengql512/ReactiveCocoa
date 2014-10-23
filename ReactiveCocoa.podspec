@@ -26,14 +26,14 @@ Pod::Spec.new do |s|
       noarc.requires_arc= false
     end
     general.subspec 'Core' do |core|
-      # core.dependencies= "ReactiveCocoa/no-arc"
+      core.dependencies= "no-arc"
       core.source_files= "ReactiveCocoaFramework/ReactiveCocoa/**/*.{d,h,m}"
       core.private_header_files= "**/*Private.h", "**/*EXTRuntimeExtensions.h"
       core.exclude_files= "ReactiveCocoaFramework/ReactiveCocoa/**/*{RACObjCRuntime,AppKit,NSControl,NSText,NSTable,UIActionSheet,UIAlertView,UIBarButtonItem,UIButton,UICollectionReusableView,UIControl,UIDatePicker,UIGestureRecognizer,UIImagePicker,UIRefreshControl,UISegmentedControl,UISlider,UIStepper,UISwitch,UITableViewCell,UITableViewHeaderFooterView,UIText}*"
       core.header_dir= "ReactiveCocoa"
     end
     general.subspec 'UI' do |ui|
-      # ui.dependencies= "ReactiveCocoa/no-arc"
+      ui.dependencies= "no-arc"
       ui.source_files= "ReactiveCocoaFramework/ReactiveCocoa/**/*{AppKit,NSControl,NSText,NSTable,UIActionSheet,UIAlertView,UIBarButtonItem,UIButton,UICollectionReusableView,UIControl,UIDatePicker,UIGestureRecognizer,UIImagePicker,UIRefreshControl,UISegmentedControl,UISlider,UIStepper,UISwitch,UITableViewCell,UITableViewHeaderFooterView,UIText}*"
       # ui.osx= {
 #         "exclude_files"=> "ReactiveCocoaFramework/ReactiveCocoa/**/*{UIActionSheet,UIAlertView,UIBarButtonItem,UIButton,UICollectionReusableView,UIControl,UIDatePicker,UIGestureRecognizer,UIImagePicker,UIRefreshControl,UISegmentedControl,UISlider,UIStepper,UISwitch,UITableViewCell,UITableViewHeaderFooterView,UIText}*.{d,h,m}"
