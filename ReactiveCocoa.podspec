@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.description= "ReactiveCocoa (RAC) is an Objective-C framework for Functional Reactive Programming. It provides APIs for composing and transforming streams of values."
   s.requires_arc= true,
   s.platforms= {
-    :"ios", "5.0",
-    :"osx", "10.7"
+    :"ios"=> "5.0",
+    :"osx"=> "10.7"
   }
   s.compiler_flags= "-DOS_OBJECT_USE_OBJC=0"
   s.prepare_command= "    find . \\( -regex '.*EXT.*\\.[mh]$' -o -regex '.*metamacros\\.[mh]$' \\) -execdir mv {} RAC{} \\;\n    find . -regex '.*\\.[hm]' -exec sed -i '' -E 's@\"(EXT.*|metamacros)\\.h\"@\"RAC\\1.h\"@' {} \\;\n    find . -regex '.*\\.[hm]' -exec sed -i '' -E 's@<ReactiveCocoa/(EXT.*)\\.h>@<ReactiveCocoa/RAC\\1.h>@' {} \\;\n",
